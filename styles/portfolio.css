@@ -1,41 +1,52 @@
 :root {
   --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   --primary-color: #024873;
-  --secondary-color: rgba(191, 44, 125, 0.05);
+  --secondary-color: rgb(247, 237, 243);
   --branding-color: #bf2c7d;
   --heading-font-family: "Literata", serif;
   --default-font-family: "Noto Sans", sans-serif;
 }
+/*:root {
+  --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  --primary-color: #024873;
+  --secondary-color: #151226;
+  --accent-color: #bf2c7d;
+}*/
 body {
-    font-family: var(--default-font-family);
+  font-family: var(--default-font-family);
 }
-  h1 {
+h1 {
   color: var(--primary-color);
   font-family: "Literata", serif;
   line-height: 1.5;
 }
 h2 {
-  font-size: 64px;
-
+  font-size: 48px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 0px;
 }
-h3
-h4
-h5
+.links {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
 h6 {
-    color: black;
-    font-family: var(--heading-font-family);
-    font-weight: bold;
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 p {
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
-  margin: 30px;
+  margin: 30px 30px 30px 0;
 }
 .hero {
-  background-color: var(--secondary-color);
+  /*background-color: var(--secondary-color);*/
   text-align: center;
-  padding: 160px 20px;
+  padding: 140px 20px 80px 20px;
+  
 }
 h1 {
   font-size: 96px;
@@ -48,7 +59,7 @@ h1 {
   margin: 0;
 }
 .hero h2 {
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: normal;
   line-height: 1.5;
@@ -58,23 +69,22 @@ h1 {
   background-color: var(--branding-color);
   border-radius: 4px;
   color: white;
-font-size: 18px;
-line-height: 27px;
-padding: 15px 30px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 .btn-branding-outline {
-font-size: 18px;
-line-height: 27px;
-padding: 15px 30px;
-border-radius: 4px;
-color: var(--branding-color);
-border: 1px solid var(--branding-color);
-
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
 }
 .project-descripion {
-  padding: 120px 60px;
+  padding: 0 60px;
 }
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .project-descripion {
     padding: 0;
     text-align: center;
@@ -84,9 +94,32 @@ border: 1px solid var(--branding-color);
     line-height: 1.2;
   }
   h2 {
-   font-size: 40px; 
+    font-size: 40px;
   }
   .hero {
     padding: 80px 20px;
   }
+}
+.navbar-brand {
+  padding-left: 50px;
+}
+.links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.branding-link {
+  background: var(--branding-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.about-link {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+}
+.home {
+  text-align: left;
+  margin-bottom: 50px;
 }
