@@ -6,19 +6,16 @@
   --heading-font-family: "Literata", serif;
   --default-font-family: "Noto Sans", sans-serif;
 }
-/*:root {
-  --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  --primary-color: #024873;
-  --secondary-color: #151226;
-  --accent-color: #bf2c7d;
-}*/
+
 body {
   font-family: var(--default-font-family);
+  margin: 100px 0;
 }
 h1 {
   color: var(--primary-color);
   font-family: "Literata", serif;
   line-height: 1.5;
+  font-weight: 400;
 }
 h2 {
   font-size: 48px;
@@ -40,13 +37,12 @@ p {
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
-  margin: 30px 30px 30px 0;
+  margin: 30px;
 }
 .hero {
   /*background-color: var(--secondary-color);*/
   text-align: center;
-  padding: 140px 20px 80px 20px;
-  
+  padding: 0 20px 80px 20px;
 }
 h1 {
   font-size: 96px;
@@ -64,9 +60,11 @@ h1 {
   font-weight: normal;
   line-height: 1.5;
   color: #151226;
+  margin: 0;
 }
 .btn-branding {
   background-color: var(--branding-color);
+  box-shadow: var(--box-shadow);
   border-radius: 4px;
   color: white;
   font-size: 18px;
@@ -84,22 +82,7 @@ h1 {
 .project-descripion {
   padding: 0 60px;
 }
-@media (max-width: 900px) {
-  .project-descripion {
-    padding: 0;
-    text-align: center;
-  }
-  h1 {
-    font-size: 44px;
-    line-height: 1.2;
-  }
-  h2 {
-    font-size: 40px;
-  }
-  .hero {
-    padding: 80px 20px;
-  }
-}
+
 .navbar-brand {
   padding-left: 50px;
 }
@@ -122,4 +105,79 @@ h1 {
 .home {
   text-align: left;
   margin-bottom: 50px;
+  margin-left: 0;
+}
+.about_text {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+#contact {
+  margin-top: 30px;
+}
+#contact h2 {
+  color: #151226;
+  font-weight: normal;
+}
+.email-link:hover {
+  color: var(--branding-color);
+  text-decoration: underline;
+}
+.email-link {
+  display: flex;
+
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .project-descripion {
+    padding: 0;
+    text-align: center;
+  }
+  .project-descripion h2 {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 576px) {
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .hero {
+    padding: 40px 20px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  #contact h2 {
+    font-size: 32px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  .home {
+    text-align: center;
+    margin-left: 30px;
+  }
+   
+   }
+  
+.hero p {
+    font-size: 30px;
+  }
+  #hero {
+    font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #151226;
+  margin: 0;
 }
